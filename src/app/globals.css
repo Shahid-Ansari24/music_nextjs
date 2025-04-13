@@ -39,3 +39,26 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scroll-style {
+  scrollbar-width: thin;                      /* Firefox: thin scrollbar */
+  scrollbar-color: #888 transparent;          /* Firefox: thumb and track */
+}
+
+.scroll-style::-webkit-scrollbar {
+  width: 3px;                                  /* Webkit: scrollbar width */
+}
+
+.scroll-style::-webkit-scrollbar-track {
+  background: transparent;                     /* Webkit: remove track bg */
+}
+
+.scroll-style::-webkit-scrollbar-thumb {
+  background-color: #888;                      /* 🟢 This is the handle */
+  border-radius: 8px;                          /* Rounded corners */
+}
+
